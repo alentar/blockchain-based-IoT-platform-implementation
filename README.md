@@ -74,9 +74,11 @@ sleep 5
 ##echo "To create a batch invoke createBatch.js "
 node createBatch.js
 ```
-
+ 
 
 **note - All the other applications function in the same manner. If some errors occur during the initial configuration, delete all the resources and rerun the script.**
+
+**To run the application through a User Interface, check the UI directory and follow the README of blockNCK UI**
 
 
 
