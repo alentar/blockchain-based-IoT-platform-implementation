@@ -49,31 +49,32 @@ application at the end of transferring a batch through the supply chain.
 
 ## How to run
 
-In a terminal run **./ncksetup.sh**
+In a terminal run 
+```bash
+./ncksetup.sh
+```
 This will create the initial configuration of the blockchain-based IoT-platform for the use case scenario. 
 
 you can now run any DApp created in the platform. To show an instance of use case scenario, dummy values are entered into an application. To run the sample application 
 where a batch is created by a production company run the following commands. 
 
-**cd application/supplier**
+```bash
+cd application/supplier
 
 #echo "This is an example of an instance of a batch creation."
-
 #echo "install necessary packages for supplier"
+npm install
 
-**npm install**
-
-**sleep 5**
+sleep 5
 
 #echo "create the wallet for a user in the supplier organization"
+node addToWallet.js
+sleep 5
 
-**node addToWallet.js**
+##echo "To create a batch invoke createBatch.js "
+node createBatch.js
+```
 
-**sleep 5**
-
-#echo "To create a batch invoke createBatch.js "
-
-**node createBatch.js**
 
 **note - All the other applications function in the same manner. If some errors occur during the initial configuration, delete all the resources and rerun the script.**
 
